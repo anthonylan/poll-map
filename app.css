@@ -193,7 +193,7 @@ html, body {
 .fake-search {
   position: absolute;
   left: 3%;
-  top: 5%;
+  top: 4%;
   z-index: 40;
   font-size: 1.6rem; }
 
