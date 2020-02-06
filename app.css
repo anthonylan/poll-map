@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap");
+html, body {
+  margin: 0;
+  font-family: "Nunito", sans-serif; }
+  html a, body a {
+    text-decoration: none; }
+
+::-webkit-scrollbar {
+  width: 1em; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  outline: 1px solid rgba(0, 0, 0, 0); }
+
+.--blue {
+  background-color: #42a5ff;
+  -webkit-box-shadow: 0px -4px #75bdff;
+  box-shadow: 0px -4px #75bdff; }
+
+.--green {
+  background-color: #2BDE73;
+  -webkit-box-shadow: 0px -4px #73e797;
+  box-shadow: 0px -4px #73e797; }
+
+.--yellow {
+  background-color: #ffc924;
+  -webkit-box-shadow: 0px -4px #ffd76a;
+  box-shadow: 0px -4px #ffd76a; }
+
+.--red {
+  background-color: #ff4742;
+  -webkit-box-shadow: 0px -4px #ff7873;
+  box-shadow: 0px -4px #ff7873; }
+
+.--d-blue {
+  background-color: #1c5182;
+  -webkit-box-shadow: 0px -4px #597da1;
+  box-shadow: 0px -4px #597da1; }
+
+.--navy {
+  background-color: #1c2a31;
+  -webkit-box-shadow: 0px -4px #525a5f;
+  box-shadow: 0px -4px #525a5f; }
+
+#map {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 5; }
+  #map .votes {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem; }
+
+.leaflet-tooltip {
+  font-size: 4rem; }
+
+.vote-regist-url {
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  z-index: 30;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  color: #555;
+  font-weight: 800;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 2px #ededed;
+  box-shadow: 0 2px #ededed; }
+  @media (max-width: 550px) {
+    .vote-regist-url {
+      font-size: .9rem; } }
+  .vote-regist-url:hover {
+    background-color: #f5f5f5; }
+  @media (max-width: 550px) {
+    .vote-regist-url {
+      left: 0%; } }
+
+.state-trigger {
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  z-index: 30;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  color: #555;
+  font-weight: 800;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 2px #ededed;
+  box-shadow: 0 2px #ededed; }
+  @media (max-width: 550px) {
+    .state-trigger {
+      font-size: .9rem; } }
+  .state-trigger:hover {
+    background-color: #f5f5f5; }
+  @media (max-width: 550px) {
+    .state-trigger {
+      top: 90%;
+      left: 70%; } }
+
+.state-site {
+  position: fixed;
+  top: 90%;
+  left: 0;
+  z-index: 30;
+  height: 400px;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  overflow-x: scroll;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .state-site .state-wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .state-site .state-wrapper a {
+      display: inline-block;
+      position: relative;
+      -webkit-transition: all .1s;
+      -o-transition: all .1s;
+      transition: all .1s;
+      min-width: 200px;
+      text-align: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.2rem;
+      padding: .8rem 0;
+      margin-top: 1rem; }
+      .state-site .state-wrapper a:hover {
+        margin-top: 1.2rem; }
+
+.geocoder-control-input {
+  -webkit-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  transform: translateY(-90%);
+  top: -200%;
+  left: 5%;
+  width: 500px;
+  height: 50px;
+  padding-left: 1rem;
+  background-image: none;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  color: #555;
+  font-weight: 800;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 2px #ededed;
+  box-shadow: 0 2px #ededed; }
+  @media (max-width: 550px) {
+    .geocoder-control-input {
+      font-size: .9rem; } }
+  .geocoder-control-input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none; }
+
+.leaflet-bar {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+::-webkit-input-placeholder {
+  text-align: center; }
+
+:-ms-input-placeholder {
+  text-align: center; }
+
+::-ms-input-placeholder {
+  text-align: center; }
+
+::placeholder {
+  text-align: center; }
+
+.fake-search {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  z-index: 40;
+  font-size: 1.6rem; }
+
+.geocoder-control-suggestions {
+  top: -2rem; }
+
+.leaflet-control-zoom {
+  -webkit-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%); }
+  .leaflet-control-zoom .leaflet-control-zoom-in {
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: #555;
+    font-weight: 800;
+    font-size: 1.1rem;
+    -webkit-box-shadow: 0 2px #ededed;
+    box-shadow: 0 2px #ededed;
+    border-radius: 6px 6px 0 0;
+    font-size: 1.6rem;
+    padding: .6rem;
+    font-weight: 900; }
+    @media (max-width: 550px) {
+      .leaflet-control-zoom .leaflet-control-zoom-in {
+        font-size: .9rem; } }
+  .leaflet-control-zoom .leaflet-control-zoom-out {
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: #555;
+    font-weight: 800;
+    font-size: 1.1rem;
+    -webkit-box-shadow: 0 2px #ededed;
+    box-shadow: 0 2px #ededed;
+    border-radius: 0px 0px 6px 6px;
+    font-size: 1.6rem;
+    padding: .6rem;
+    font-weight: 900; }
+    @media (max-width: 550px) {
+      .leaflet-control-zoom .leaflet-control-zoom-out {
+        font-size: .9rem; } }
+
+.controllers {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  z-index: 40;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .controllers a {
+    display: block;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: #555;
+    font-weight: 800;
+    font-size: 1.1rem;
+    -webkit-box-shadow: 0 2px #ededed;
+    box-shadow: 0 2px #ededed;
+    font-size: 1.4rem;
+    margin: .2rem 0;
+    border-radius: none; }
+    @media (max-width: 550px) {
+      .controllers a {
+        font-size: .9rem; } }
+    .controllers a:hover {
+      background-color: #f5f5f5; }
+  .controllers a:nth-child(1) {
+    border-radius: 6px 6px  0 0; }
+  .controllers a:nth-child(2) {
+    border-radius: 0 0  6px 6px; }
