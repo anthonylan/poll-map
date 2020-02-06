@@ -78,7 +78,7 @@ var geocodeService = L.esri.Geocoding.geocodeService();
 
 
     let iconCus = L.icon({
-      iconUrl: '../icon.png',
+      iconUrl: 'https://raw.githubusercontent.com/anthonylan/poll-map/master/icon.png',
 
       iconSize: [38, 38],
       iconAnchor: [22, 50],
