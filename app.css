@@ -137,6 +137,9 @@ html, body {
       margin-top: 1rem; }
       .state-site .state-wrapper a:hover {
         margin-top: 1.2rem; }
+  @media (max-width: 550px) {
+    .state-site {
+      top: 88%; } }
 
 .geocoder-control-input {
   -webkit-transform: translateY(-90%);
@@ -190,7 +193,7 @@ html, body {
 .fake-search {
   position: absolute;
   left: 3%;
-  top: 3%;
+  top: 5%;
   z-index: 40;
   font-size: 1.6rem; }
 
