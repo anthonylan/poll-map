@@ -217,6 +217,8 @@ var geocodeService = L.esri.Geocoding.geocodeService();
           }
           
           votersRegUrl.querySelector('span').innerHTML = state
+          console.log(state);
+          
           
         });
         
@@ -502,3 +504,8 @@ document.querySelectorAll('.state-site a').forEach((ss) => {
 // // })
 
 // // drawIcon.style.display = 'none'
+
+
+
+//SHOPIUFY
+//theme.liquid
