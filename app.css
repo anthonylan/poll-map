@@ -85,7 +85,7 @@ html, body {
 .state-trigger {
   position: fixed;
   right: 2%;
-  top: 2%;
+  top: 60%;
   z-index: 30;
   background-color: #fff;
   padding: .5rem 1rem;
