@@ -195,6 +195,57 @@ document.querySelectorAll('.state-wrapper a').forEach((stateUrl) => {
 
 
 
+var scrolled = 0;
+let container = document.querySelector('.state-wrapper');
+
+document.querySelector('.keyup').addEventListener('click', () => {
+  scrolled = scrolled + 300;
+  container.scrollTop = scrolled
+  //console.log(container.scrollTop);
+  if (container.scrollTop == 3000) {
+    scrolled = 0;
+  }
+  
+})
+
+document.querySelector('.keydown').addEventListener('click', () => {
+  scrolled = scrolled - 300;
+  container.scrollTop = scrolled
+  //console.log(container.scrollTop);
+
+  if (container.scrollTop == 0) {
+    scrolled = 0;
+  }
+})
+
+
+let container2 = document.querySelector('.inner-vote');
+
+document.querySelector('.keyup-alt').addEventListener('click', () => {
+  scrolled = scrolled + 300;
+  container2.scrollTop = scrolled
+  console.log(container2.scrollTop);
+  if (container2.scrollTop == 2100) {
+    scrolled = 0;
+  }
+  
+})
+
+document.querySelector('.keydown-alt').addEventListener('click', () => {
+  scrolled = scrolled - 300;
+  container2.scrollTop = scrolled
+  console.log(container2.scrollTop);
+
+  if (container2.scrollTop == 0) {
+    scrolled = 0;
+  }
+})
+
+
+    
+
+
+
 
 
 
